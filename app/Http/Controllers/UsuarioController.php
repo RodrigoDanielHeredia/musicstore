@@ -10,6 +10,6 @@ class UsuarioController extends Controller
     //
     public function show()
     {
-        return new UsuarioResource(Usuario::findAll());
+        return Usuario::All();
     }
 }

@@ -10,6 +10,6 @@ class CuponController extends Controller
     //
     public function show()
     {
-        return new CuponResource(Cupon::findAll());
+        return Cupon::All();
     }
 }

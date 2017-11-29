@@ -10,6 +10,6 @@ class PeliculaController extends Controller
     //
     public function show()
     {
-        return new PeliculaResource(Pelicula::findAll());
+        return Pelicula::All();
     }
 }

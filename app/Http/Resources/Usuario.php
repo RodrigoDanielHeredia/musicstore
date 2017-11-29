@@ -17,6 +17,11 @@ class Usuario extends Resource
         return [
             'id'=>$this->id,
             'name'=>$this->name,
+            'apellido'=>$this->apellido,
+            'email'=>$this->email,
+            'telefono'=>$this->telefono,
+            'pais'=>$this->pais,
+            'dirección'=>$this->direccion,
         ];
     }
 }

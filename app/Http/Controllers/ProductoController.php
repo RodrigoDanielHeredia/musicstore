@@ -8,8 +8,8 @@ use App\Http\Resources\Producto as PoductoResource;
 class ProductoController extends Controller
 {
     //
-    public function show($id)
+    public function show()
     {
-        return new ProductoResource(Producto::find($id));
+        return Producto::all();
     }
 }

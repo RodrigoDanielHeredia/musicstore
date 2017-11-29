@@ -20,7 +20,7 @@ class Disco extends Resource
             'precio'=>$this->precio,
             'existenia'=>$this->existenia,
             'year'=>$this->year,
-            'idband'=>$this->idband,
+            'band'=>$this->band,
             'idgenero'=>$this->idgenero,
         ];
     }

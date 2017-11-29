@@ -8,8 +8,8 @@ use App\Http\Resources\Disco as DiscoResource;
 class DiscoController extends Controller
 {
     //
-    public function show($id)
+    public function show()
     {
-        return new DiscoResource(Disco::find($id));
+        return Disco::all();
     }
 }
