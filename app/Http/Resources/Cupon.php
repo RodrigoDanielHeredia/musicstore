@@ -15,8 +15,7 @@ class Cupon extends Resource
     public function toArray($request)
     {
         return [
-            'idcupon'=>$this->idcupon,
-            'idproducto'=>$this->idproducto,
+            'nombre'=>$this->nombre,
             'descuento'=>$this->descuento,
         ];
     }

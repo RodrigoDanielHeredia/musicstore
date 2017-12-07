@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Usuario;
+use App\Http\Resources\Usuario as UsuarioResource;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +19,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/disco/','DiscoController@show');
-Route::get('/producto','ProductoController@show');
-Route::get('/pelicula','PeliculaController@show');
-Route::get('/cupon','CuponController@show');
-Route::get('/usuario','UsuarioController@show');
+Route::get('/discos','DiscoController@show');
+Route::get('/productos','ProductoController@show');
+Route::get('/peliculas','PeliculaController@show');
+Route::get('/cupons','CuponController@show');
+Route::get('/usuarios/{id}','UsuarioController@show');
+Route::get('/generos','GeneroController@show');
+Route::post('/login',function (){
+
+});

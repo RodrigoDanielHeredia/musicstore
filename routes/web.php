@@ -15,6 +15,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/tienda', function () {
-    return view('tienda');
+Route::get('/admin', function () {
+    return view('dashboard');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resources([
+    '/producto','ProductoController',
+    '/cupon','CuponController',
+    '/disco','DiscoController',
+    '/pelicula','PeliculaController',
+    '/genero','GeneroController',
+    '/usuario','UsuarioController',
+]);

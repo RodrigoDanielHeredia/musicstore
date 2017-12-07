@@ -8,8 +8,8 @@ use App\Http\Resources\Usuario as UsuarioResource;
 class UsuarioController extends Controller
 {
     //
-    public function show()
+    public function show($id)
     {
-        return Usuario::All();
+        return new UsuarioResource(Usuario::find($id));
     }
 }

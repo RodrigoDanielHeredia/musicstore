@@ -20,7 +20,6 @@ class Usuario extends Resource
             'apellido'=>$this->apellido,
             'email'=>$this->email,
             'telefono'=>$this->telefono,
-            'pais'=>$this->pais,
             'dirección'=>$this->direccion,
         ];
     }
